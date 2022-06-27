@@ -74,15 +74,23 @@ For recap, to predict `house price per unit` I applied 6 different regression mo
 
 Comparing the result of regression evaluation metric on each regression model (RMSE, R-Squared), I found that Random Forest Regression generated the best score on each metric. The comparison on each model will be shown below:
 1. R-Squared
+
 ![image](https://user-images.githubusercontent.com/69357406/175922183-0333da20-4b7a-4186-b9ed-31b48982007b.png)
+
 2. RMSE
+
 ![image](https://user-images.githubusercontent.com/69357406/175922226-9e37cf52-c98e-44e3-ae7b-57423add87b5.png)
+<br>
 Interpretation: Random Forest Regression model able explain 80,4% of the observed data and had average residual distance 0,173.
 <br>
+
 To be able to obtain more optimum model, I applied RandomSearchCV. The goal is to find optimal parameter for the model. Below listed the result:
 1. R-Squared
+
 ![image](https://user-images.githubusercontent.com/69357406/175924307-3c5088f0-071d-4214-b615-581460066007.png)
+
 2. RMSE
+
 ![image](https://user-images.githubusercontent.com/69357406/175924328-3da6f8a3-5fea-4fa7-ac99-601b74488f80.png)
 <br>
 Intepretation: Optimizing parameter able to increase Random Forest Regression model performance. Tuned Random Forest Regression model able to explain 82,4% of the observed data and had average residual distance 0,164
