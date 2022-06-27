@@ -63,6 +63,31 @@ Based on the visualization above, I found that:
 4. In general, there were no spesific pattern that indicate correlation between house price and house age. But the visualization shows there were certain tendencies that consumer aftering house that age approx 10-15 years old. The reason is there were spike increase in house price that had age around 10-15 years old
 5. In general, there were certain increase in houses price overtime. It is suspected that the reason why this happened is that there was an increase in inflation
 
-## Conclusion
-By looking through regression evaluation metric (R-Squared and RMSE), 
+## Model Result
+For recap, to predict `house price per unit` I applied 6 different regression model that listed below:
+1. Linear Regression
+2. L1 Regularization (Lasso Regression)
+3. L2 Regularization (Ridge Regression)
+4. Elastic Net
+5. XGB Regression
+6. Random Forest Regression
+
+Comparing the result of regression evaluation metric on each regression model (RMSE, R-Squared), I found that Random Forest Regression generated the best score on each metric. The comparison on each model will be shown below:
+1. R-Squared
+![image](https://user-images.githubusercontent.com/69357406/175922183-0333da20-4b7a-4186-b9ed-31b48982007b.png)
+2. RMSE
+![image](https://user-images.githubusercontent.com/69357406/175922226-9e37cf52-c98e-44e3-ae7b-57423add87b5.png)
+Interpretation: Random Forest Regression model able explain 80,4% of the observed data and had average residual distance 0,173.
+<br>
+To be able to obtain more optimum model, I applied RandomSearchCV. The goal is to find optimal parameter for the model. Below listed the result:
+1. R-Squared
+![image](https://user-images.githubusercontent.com/69357406/175924307-3c5088f0-071d-4214-b615-581460066007.png)
+2. RMSE
+![image](https://user-images.githubusercontent.com/69357406/175924328-3da6f8a3-5fea-4fa7-ac99-601b74488f80.png)
+<br>
+Intepretation: Optimizing parameter able to increase Random Forest Regression model performance. Tuned Random Forest Regression model able to explain 82,4% of the observed data and had average residual distance 0,164
+## Model Feature Importance
+Intepreting from the model result, it seems that the most important feature in the model is `distance to the nearest MRT Station` followed by `latitude`,`house age`,etc. Below listed visualization that shows importance of each feature in the model:
+![image](https://user-images.githubusercontent.com/69357406/175924981-83aa8f3b-223f-4098-8bf2-6795cdfaf4eb.png)
+
 
