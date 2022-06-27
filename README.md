@@ -1,5 +1,4 @@
 # Predicting-House-Price-using-Regression-Method
-# Customer_Segmentation_Online_Marketplace
 **Important Note: Because the excel file size is too huge, to access the original dataset, please download it through link source below**
 ## Background & Objective
 **Background**: 
