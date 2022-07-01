@@ -1,5 +1,4 @@
 # Predicting-House-Price-using-Regression-Method
-**Important Note: Because the excel file size is too huge, to access the original dataset, please download it through link source below**
 ## Background & Objective
 **Background**: 
 <br>
@@ -29,9 +28,7 @@ According through the source, it was said that the data set is collected from pu
 * Insights about the current market state in Taipei real estate industry
 * Identified factor that affect increase or decrease of house price per unit in Taipei
 * Predictive model that able to predict house price
-<br>
 
-**(Note: We will do RFM Analysis and combine it with predictive algorithm to achive in depth insight)**
 
 ## Data Source
 The data was taken from Real estate valuation data set source from UCI Machine Learning Library: 
